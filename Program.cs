@@ -3,6 +3,12 @@ int number = Convert.ToInt32(Console.ReadLine());
 string array = number.ToString();
 char max = array[0];
 char min = array[0];
+if (array.Length % 2 == 0)
+{
+  Console.WriteLine("У этого числа нет средней по расположению цифры ");
+}
+else
+{
   for (int i = 0; i < array.Length; i++)
   {
     if (max < array[i])
@@ -24,5 +30,6 @@ if ( result1 == result2)
 else
 {
   Console.WriteLine($"{number} - это не интересное число ");
+}
 }
 
